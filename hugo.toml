@@ -1,7 +1,7 @@
 baseURL = "https://archlint.ru/"
 languageCode = "en"
 title = "archlint - Architecture Quality for AI-Driven Development"
-theme = "minimal"
+# theme = "minimal" # using custom layouts
 
 [params]
   description = "Ecosystem of linters for AI agent workflows. Quality, cost, safety control."
