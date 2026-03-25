@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang | default "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | archlint</title>
+    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="/" class="logo">archlint</a>
+            <div class="nav-links">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </nav>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>archlint ecosystem - open source tools for AI agent quality control</p>
+        </div>
+    </footer>
+</body>
+</html>

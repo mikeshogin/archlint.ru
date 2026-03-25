@@ -1,0 +1,34 @@
+baseURL = "https://archlint.ru/"
+languageCode = "en"
+title = "archlint - Architecture Quality for AI-Driven Development"
+theme = "minimal"
+
+[params]
+  description = "Ecosystem of linters for AI agent workflows. Quality, cost, safety control."
+  author = "Mike Shogin"
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "English"
+  [languages.ru]
+    weight = 2
+    languageName = "Russian"
+
+[menu]
+  [[menu.main]]
+    name = "Products"
+    url = "/products/"
+    weight = 1
+  [[menu.main]]
+    name = "Scan Results"
+    url = "/scan/"
+    weight = 2
+  [[menu.main]]
+    name = "Repositories"
+    url = "/repos/"
+    weight = 3
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 4
