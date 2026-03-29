@@ -1,0 +1,2438 @@
+components:
+  - id: versions/presenter/v2
+    title: v2
+    entity: package
+  - id: versions/presenter/v3
+    title: v3
+    entity: package
+  - id: /tmp/test-chi
+    title: chi
+    entity: package
+  - id: test-chi/_examples/todos-resource
+    title: main
+    entity: package
+  - id: test-chi/_examples/versions
+    title: main
+    entity: package
+  - id: test-chi/_examples/limits
+    title: main
+    entity: package
+  - id: test-chi/_examples/rest
+    title: main
+    entity: package
+  - id: test-chi/_examples/custom-method
+    title: main
+    entity: package
+  - id: test-chi/_examples/graceful
+    title: main
+    entity: package
+  - id: _examples/versions/data
+    title: data
+    entity: package
+  - id: versions/presenter/v1
+    title: v1
+    entity: package
+  - id: tmp/test-chi/middleware
+    title: middleware
+    entity: package
+  - id: test-chi/_examples/custom-handler
+    title: main
+    entity: package
+  - id: test-chi/_examples/fileserver
+    title: main
+    entity: package
+  - id: test-chi/_examples/hello-world
+    title: main
+    entity: package
+  - id: test-chi/_examples/logging
+    title: main
+    entity: package
+  - id: test-chi/_examples/pathvalue
+    title: main
+    entity: package
+  - id: test-chi/_examples/router-walk
+    title: main
+    entity: package
+  - id: test-chi/_examples/custom-handler.Handler
+    title: Handler
+    entity: type
+  - id: test-chi/_examples/rest.UserPayload
+    title: UserPayload
+    entity: struct
+  - id: test-chi/_examples/rest.Article
+    title: Article
+    entity: struct
+  - id: versions/presenter/v2.Article
+    title: Article
+    entity: struct
+  - id: tmp/test-chi/middleware.EncoderFunc
+    title: EncoderFunc
+    entity: type
+  - id: tmp/test-chi/middleware.LogFormatter
+    title: LogFormatter
+    entity: interface
+  - id: tmp/test-chi/middleware.token
+    title: token
+    entity: struct
+  - id: test-chi/_examples/rest.ArticleRequest
+    title: ArticleRequest
+    entity: struct
+  - id: versions/presenter/v1.Article
+    title: Article
+    entity: struct
+  - id: tmp/test-chi/middleware.HeaderRouter
+    title: HeaderRouter
+    entity: type
+  - id: tmp/test-chi/middleware.throttler
+    title: throttler
+    entity: struct
+  - id: tmp/test-chi/middleware.httpFancyWriter
+    title: httpFancyWriter
+    entity: struct
+  - id: /tmp/test-chi.nodeTyp
+    title: nodeTyp
+    entity: type
+  - id: /tmp/test-chi.Route
+    title: Route
+    entity: struct
+  - id: versions/presenter/v3.Article
+    title: Article
+    entity: struct
+  - id: /tmp/test-chi.Router
+    title: Router
+    entity: interface
+  - id: /tmp/test-chi.Context
+    title: Context
+    entity: struct
+  - id: tmp/test-chi/middleware.defaultLogEntry
+    title: defaultLogEntry
+    entity: struct
+  - id: tmp/test-chi/middleware.ctxKeyRequestID
+    title: ctxKeyRequestID
+    entity: type
+  - id: tmp/test-chi/middleware.Pattern
+    title: Pattern
+    entity: struct
+  - id: tmp/test-chi/middleware.ThrottleOpts
+    title: ThrottleOpts
+    entity: struct
+  - id: tmp/test-chi/middleware.hijackWriter
+    title: hijackWriter
+    entity: struct
+  - id: test-chi/_examples/rest.ErrResponse
+    title: ErrResponse
+    entity: struct
+  - id: /tmp/test-chi.Middlewares
+    title: Middlewares
+    entity: type
+  - id: /tmp/test-chi.contextKey
+    title: contextKey
+    entity: struct
+  - id: tmp/test-chi/middleware.Compressor
+    title: Compressor
+    entity: struct
+  - id: tmp/test-chi/middleware.ioResetterWriter
+    title: ioResetterWriter
+    entity: interface
+  - id: tmp/test-chi/middleware.HeaderRoute
+    title: HeaderRoute
+    entity: struct
+  - id: tmp/test-chi/middleware.flushWriter
+    title: flushWriter
+    entity: struct
+  - id: /tmp/test-chi.Mux
+    title: Mux
+    entity: struct
+  - id: test-chi/_examples/rest.ArticleResponse
+    title: ArticleResponse
+    entity: struct
+  - id: test-chi/_examples/todos-resource.todosResource
+    title: todosResource
+    entity: struct
+  - id: /tmp/test-chi.Routes
+    title: Routes
+    entity: interface
+  - id: tmp/test-chi/middleware.WrapResponseWriter
+    title: WrapResponseWriter
+    entity: interface
+  - id: /tmp/test-chi.methodTyp
+    title: methodTyp
+    entity: type
+  - id: test-chi/_examples/rest.User
+    title: User
+    entity: struct
+  - id: tmp/test-chi/middleware.LogEntry
+    title: LogEntry
+    entity: interface
+  - id: tmp/test-chi/middleware.LoggerInterface
+    title: LoggerInterface
+    entity: interface
+  - id: tmp/test-chi/middleware.DefaultLogFormatter
+    title: DefaultLogFormatter
+    entity: struct
+  - id: tmp/test-chi/middleware.prettyStack
+    title: prettyStack
+    entity: struct
+  - id: tmp/test-chi/middleware.basicWriter
+    title: basicWriter
+    entity: struct
+  - id: /tmp/test-chi.endpoints
+    title: endpoints
+    entity: type
+  - id: /tmp/test-chi.nodes
+    title: nodes
+    entity: type
+  - id: test-chi/_examples/todos-resource.usersResource
+    title: usersResource
+    entity: struct
+  - id: tmp/test-chi/middleware.compressResponseWriter
+    title: compressResponseWriter
+    entity: struct
+  - id: tmp/test-chi/middleware.flushHijackWriter
+    title: flushHijackWriter
+    entity: struct
+  - id: tmp/test-chi/middleware.http2FancyWriter
+    title: http2FancyWriter
+    entity: struct
+  - id: /tmp/test-chi.WalkFunc
+    title: WalkFunc
+    entity: type
+  - id: _examples/versions/data.Article
+    title: Article
+    entity: struct
+  - id: /tmp/test-chi.RouteParams
+    title: RouteParams
+    entity: struct
+  - id: tmp/test-chi/middleware.compressFlusher
+    title: compressFlusher
+    entity: interface
+  - id: tmp/test-chi/middleware.contextKey
+    title: contextKey
+    entity: struct
+  - id: /tmp/test-chi.node
+    title: node
+    entity: struct
+  - id: /tmp/test-chi.endpoint
+    title: endpoint
+    entity: struct
+  - id: /tmp/test-chi.ChainHandler
+    title: ChainHandler
+    entity: struct
+  - id: test-chi/_examples/rest.ArticleCtx
+    title: ArticleCtx
+    entity: function
+  - id: tmp/test-chi/middleware.Maybe
+    title: Maybe
+    entity: function
+  - id: tmp/test-chi/middleware.Profiler
+    title: Profiler
+    entity: function
+  - id: tmp/test-chi/middleware.WithValue
+    title: WithValue
+    entity: function
+  - id: /tmp/test-chi.methodNotAllowedHandler
+    title: methodNotAllowedHandler
+    entity: function
+  - id: test-chi/_examples/rest.dbGetUser
+    title: dbGetUser
+    entity: function
+  - id: /tmp/test-chi.NewRouteContext
+    title: NewRouteContext
+    entity: function
+  - id: tmp/test-chi/middleware.ContentCharset
+    title: ContentCharset
+    entity: function
+  - id: tmp/test-chi/middleware.SetHeader
+    title: SetHeader
+    entity: function
+  - id: tmp/test-chi/middleware.realIP
+    title: realIP
+    entity: function
+  - id: tmp/test-chi/middleware.StripSlashes
+    title: StripSlashes
+    entity: function
+  - id: tmp/test-chi/middleware.NewWrapResponseWriter
+    title: NewWrapResponseWriter
+    entity: function
+  - id: test-chi/_examples/pathvalue.pathValueHandler
+    title: pathValueHandler
+    entity: function
+  - id: test-chi/_examples/rest.dbRemoveArticle
+    title: dbRemoveArticle
+    entity: function
+  - id: tmp/test-chi/middleware.matchAcceptEncoding
+    title: matchAcceptEncoding
+    entity: function
+  - id: /tmp/test-chi.walk
+    title: walk
+    entity: function
+  - id: tmp/test-chi/middleware.ThrottleWithOpts
+    title: ThrottleWithOpts
+    entity: function
+  - id: test-chi/_examples/versions.randomErrorMiddleware
+    title: randomErrorMiddleware
+    entity: function
+  - id: /tmp/test-chi.URLParamFromCtx
+    title: URLParamFromCtx
+    entity: function
+  - id: tmp/test-chi/middleware.GetHead
+    title: GetHead
+    entity: function
+  - id: tmp/test-chi/middleware.SupressNotFound
+    title: SupressNotFound
+    entity: function
+  - id: test-chi/_examples/rest.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/rest.AdminOnly
+    title: AdminOnly
+    entity: function
+  - id: test-chi/_examples/rest.ErrRender
+    title: ErrRender
+    entity: function
+  - id: tmp/test-chi/middleware.Sunset
+    title: Sunset
+    entity: function
+  - id: test-chi/_examples/fileserver.FileServer
+    title: FileServer
+    entity: function
+  - id: test-chi/_examples/router-walk.Ping
+    title: Ping
+    entity: function
+  - id: tmp/test-chi/middleware.Logger
+    title: Logger
+    entity: function
+  - id: /tmp/test-chi.RegisterMethod
+    title: RegisterMethod
+    entity: function
+  - id: test-chi/_examples/hello-world.main
+    title: main
+    entity: function
+  - id: /tmp/test-chi.URLParam
+    title: URLParam
+    entity: function
+  - id: tmp/test-chi/middleware.basicAuthFailed
+    title: basicAuthFailed
+    entity: function
+  - id: tmp/test-chi/middleware.AllowContentType
+    title: AllowContentType
+    entity: function
+  - id: tmp/test-chi/middleware.Heartbeat
+    title: Heartbeat
+    entity: function
+  - id: tmp/test-chi/middleware.GetLogEntry
+    title: GetLogEntry
+    entity: function
+  - id: tmp/test-chi/middleware.init
+    title: init
+    entity: function
+  - id: /tmp/test-chi.patParamKeys
+    title: patParamKeys
+    entity: function
+  - id: test-chi/_examples/rest.DeleteArticle
+    title: DeleteArticle
+    entity: function
+  - id: tmp/test-chi/middleware.PageRoute
+    title: PageRoute
+    entity: function
+  - id: tmp/test-chi/middleware.RedirectSlashes
+    title: RedirectSlashes
+    entity: function
+  - id: test-chi/_examples/versions.apiVersionCtx
+    title: apiVersionCtx
+    entity: function
+  - id: /tmp/test-chi.NewRouter
+    title: NewRouter
+    entity: function
+  - id: /tmp/test-chi.replaceWildcards
+    title: replaceWildcards
+    entity: function
+  - id: tmp/test-chi/middleware.NoCache
+    title: NoCache
+    entity: function
+  - id: tmp/test-chi/middleware.RouteHeaders
+    title: RouteHeaders
+    entity: function
+  - id: tmp/test-chi/middleware.ThrottleBacklog
+    title: ThrottleBacklog
+    entity: function
+  - id: test-chi/_examples/versions.getArticle
+    title: getArticle
+    entity: function
+  - id: test-chi/_examples/rest.NewArticleResponse
+    title: NewArticleResponse
+    entity: function
+  - id: test-chi/_examples/rest.SearchArticles
+    title: SearchArticles
+    entity: function
+  - id: tmp/test-chi/middleware.split
+    title: split
+    entity: function
+  - id: tmp/test-chi/middleware.PrintPrettyStack
+    title: PrintPrettyStack
+    entity: function
+  - id: test-chi/_examples/rest.dbGetArticleBySlug
+    title: dbGetArticleBySlug
+    entity: function
+  - id: test-chi/_examples/todos-resource.main
+    title: main
+    entity: function
+  - id: tmp/test-chi/middleware.AllowContentEncoding
+    title: AllowContentEncoding
+    entity: function
+  - id: tmp/test-chi/middleware.Recoverer
+    title: Recoverer
+    entity: function
+  - id: test-chi/_examples/custom-handler.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/rest.paginate
+    title: paginate
+    entity: function
+  - id: test-chi/_examples/router-walk.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/versions.articleRouter
+    title: articleRouter
+    entity: function
+  - id: tmp/test-chi/middleware.WithLogEntry
+    title: WithLogEntry
+    entity: function
+  - id: test-chi/_examples/rest.init
+    title: init
+    entity: function
+  - id: tmp/test-chi/middleware.encoderDeflate
+    title: encoderDeflate
+    entity: function
+  - id: test-chi/_examples/graceful.service
+    title: service
+    entity: function
+  - id: test-chi/_examples/rest.CreateArticle
+    title: CreateArticle
+    entity: function
+  - id: test-chi/_examples/logging.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/versions.main
+    title: main
+    entity: function
+  - id: tmp/test-chi/middleware.NextRequestID
+    title: NextRequestID
+    entity: function
+  - id: /tmp/test-chi.patNextSegment
+    title: patNextSegment
+    entity: function
+  - id: /tmp/test-chi.Walk
+    title: Walk
+    entity: function
+  - id: test-chi/_examples/rest.dbNewArticle
+    title: dbNewArticle
+    entity: function
+  - id: test-chi/_examples/rest.ErrInvalidRequest
+    title: ErrInvalidRequest
+    entity: function
+  - id: tmp/test-chi/middleware.encoderGzip
+    title: encoderGzip
+    entity: function
+  - id: test-chi/_examples/custom-handler.customHandler
+    title: customHandler
+    entity: function
+  - id: test-chi/_examples/rest.ListArticles
+    title: ListArticles
+    entity: function
+  - id: test-chi/_examples/rest.GetArticle
+    title: GetArticle
+    entity: function
+  - id: tmp/test-chi/middleware.contentEncoding
+    title: contentEncoding
+    entity: function
+  - id: tmp/test-chi/middleware.Timeout
+    title: Timeout
+    entity: function
+  - id: test-chi/_examples/rest.dbGetArticle
+    title: dbGetArticle
+    entity: function
+  - id: tmp/test-chi/middleware.GetReqID
+    title: GetReqID
+    entity: function
+  - id: test-chi/_examples/custom-method.init
+    title: init
+    entity: function
+  - id: versions/presenter/v2.NewArticleResponse
+    title: NewArticleResponse
+    entity: function
+  - id: tmp/test-chi/middleware.NewCompressor
+    title: NewCompressor
+    entity: function
+  - id: tmp/test-chi/middleware.RealIP
+    title: RealIP
+    entity: function
+  - id: /tmp/test-chi.NewMux
+    title: NewMux
+    entity: function
+  - id: /tmp/test-chi.Chain
+    title: Chain
+    entity: function
+  - id: tmp/test-chi/middleware.BasicAuth
+    title: BasicAuth
+    entity: function
+  - id: tmp/test-chi/middleware.RequestLogger
+    title: RequestLogger
+    entity: function
+  - id: tmp/test-chi/middleware.New
+    title: New
+    entity: function
+  - id: test-chi/_examples/fileserver.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/rest.NewUserPayloadResponse
+    title: NewUserPayloadResponse
+    entity: function
+  - id: _examples/versions/data.PresentError
+    title: PresentError
+    entity: function
+  - id: tmp/test-chi/middleware.RequestSize
+    title: RequestSize
+    entity: function
+  - id: test-chi/_examples/versions.listArticles
+    title: listArticles
+    entity: function
+  - id: /tmp/test-chi.RouteContext
+    title: RouteContext
+    entity: function
+  - id: tmp/test-chi/middleware.Compress
+    title: Compress
+    entity: function
+  - id: test-chi/_examples/limits.main
+    title: main
+    entity: function
+  - id: tmp/test-chi/middleware.CleanPath
+    title: CleanPath
+    entity: function
+  - id: tmp/test-chi/middleware.RequestID
+    title: RequestID
+    entity: function
+  - id: /tmp/test-chi.longestPrefix
+    title: longestPrefix
+    entity: function
+  - id: test-chi/_examples/rest.UpdateArticle
+    title: UpdateArticle
+    entity: function
+  - id: tmp/test-chi/middleware.NewPattern
+    title: NewPattern
+    entity: function
+  - id: test-chi/_examples/graceful.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/rest.dbUpdateArticle
+    title: dbUpdateArticle
+    entity: function
+  - id: versions/presenter/v1.NewArticleResponse
+    title: NewArticleResponse
+    entity: function
+  - id: /tmp/test-chi.chain
+    title: chain
+    entity: function
+  - id: tmp/test-chi/middleware.PathRewrite
+    title: PathRewrite
+    entity: function
+  - id: tmp/test-chi/middleware.URLFormat
+    title: URLFormat
+    entity: function
+  - id: versions/presenter/v3.NewArticleResponse
+    title: NewArticleResponse
+    entity: function
+  - id: tmp/test-chi/middleware.Throttle
+    title: Throttle
+    entity: function
+  - id: test-chi/_examples/custom-method.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/pathvalue.main
+    title: main
+    entity: function
+  - id: test-chi/_examples/rest.adminRouter
+    title: adminRouter
+    entity: function
+  - id: tmp/test-chi/middleware.cW
+    title: cW
+    entity: function
+  - id: test-chi/_examples/rest.NewArticleListResponse
+    title: NewArticleListResponse
+    entity: function
+  - id: tmp/test-chi/middleware.StripPrefix
+    title: StripPrefix
+    entity: function
+  - id: /tmp/test-chi.node.routes
+    title: routes
+    entity: method
+  - id: /tmp/test-chi.Middlewares.HandlerFunc
+    title: HandlerFunc
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.Close
+    title: Close
+    entity: method
+  - id: /tmp/test-chi.Mux.MethodNotAllowedHandler
+    title: MethodNotAllowedHandler
+    entity: method
+  - id: /tmp/test-chi.Mux.routeHTTP
+    title: routeHTTP
+    entity: method
+  - id: /tmp/test-chi.Mux.Routes
+    title: Routes
+    entity: method
+  - id: /tmp/test-chi.Mux.Delete
+    title: Delete
+    entity: method
+  - id: /tmp/test-chi.Mux.Mount
+    title: Mount
+    entity: method
+  - id: /tmp/test-chi.Mux.ServeHTTP
+    title: ServeHTTP
+    entity: method
+  - id: tmp/test-chi/middleware.HeaderRouter.Route
+    title: Route
+    entity: method
+  - id: tmp/test-chi/middleware.httpFancyWriter.Hijack
+    title: Hijack
+    entity: method
+  - id: tmp/test-chi/middleware.http2FancyWriter.Push
+    title: Push
+    entity: method
+  - id: /tmp/test-chi.Mux.HandleFunc
+    title: HandleFunc
+    entity: method
+  - id: /tmp/test-chi.Mux.Trace
+    title: Trace
+    entity: method
+  - id: /tmp/test-chi.Mux.NotFound
+    title: NotFound
+    entity: method
+  - id: test-chi/_examples/todos-resource.usersResource.Get
+    title: Get
+    entity: method
+  - id: test-chi/_examples/todos-resource.usersResource.Delete
+    title: Delete
+    entity: method
+  - id: /tmp/test-chi.Mux.Handle
+    title: Handle
+    entity: method
+  - id: test-chi/_examples/custom-handler.Handler.ServeHTTP
+    title: ServeHTTP
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.Tee
+    title: Tee
+    entity: method
+  - id: /tmp/test-chi.Mux.handle
+    title: handle
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.Create
+    title: Create
+    entity: method
+  - id: /tmp/test-chi.Context.URLParam
+    title: URLParam
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.Hijack
+    title: Hijack
+    entity: method
+  - id: /tmp/test-chi.Mux.nextRoutePath
+    title: nextRoutePath
+    entity: method
+  - id: /tmp/test-chi.node.getEdge
+    title: getEdge
+    entity: method
+  - id: /tmp/test-chi.nodes.Sort
+    title: Sort
+    entity: method
+  - id: tmp/test-chi/middleware.Compressor.selectEncoder
+    title: selectEncoder
+    entity: method
+  - id: tmp/test-chi/middleware.throttler.setRetryAfterHeaderIfNeeded
+    title: setRetryAfterHeaderIfNeeded
+    entity: method
+  - id: /tmp/test-chi.Mux.Method
+    title: Method
+    entity: method
+  - id: /tmp/test-chi.Mux.updateSubRoutes
+    title: updateSubRoutes
+    entity: method
+  - id: /tmp/test-chi.endpoints.Value
+    title: Value
+    entity: method
+  - id: /tmp/test-chi.node.InsertRoute
+    title: InsertRoute
+    entity: method
+  - id: /tmp/test-chi.nodes.Len
+    title: Len
+    entity: method
+  - id: test-chi/_examples/rest.UserPayload.Render
+    title: Render
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.Update
+    title: Update
+    entity: method
+  - id: tmp/test-chi/middleware.flushHijackWriter.Flush
+    title: Flush
+    entity: method
+  - id: /tmp/test-chi.Mux.Options
+    title: Options
+    entity: method
+  - id: /tmp/test-chi.node.findRoute
+    title: findRoute
+    entity: method
+  - id: /tmp/test-chi.node.findPattern
+    title: findPattern
+    entity: method
+  - id: tmp/test-chi/middleware.Compressor.Handler
+    title: Handler
+    entity: method
+  - id: tmp/test-chi/middleware.prettyStack.decorateFuncCallLine
+    title: decorateFuncCallLine
+    entity: method
+  - id: tmp/test-chi/middleware.HeaderRouter.RouteAny
+    title: RouteAny
+    entity: method
+  - id: /tmp/test-chi.node.addChild
+    title: addChild
+    entity: method
+  - id: test-chi/_examples/todos-resource.usersResource.Routes
+    title: Routes
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.Write
+    title: Write
+    entity: method
+  - id: tmp/test-chi/middleware.HeaderRouter.Handler
+    title: Handler
+    entity: method
+  - id: tmp/test-chi/middleware.httpFancyWriter.ReadFrom
+    title: ReadFrom
+    entity: method
+  - id: tmp/test-chi/middleware.Compressor.SetEncoder
+    title: SetEncoder
+    entity: method
+  - id: /tmp/test-chi.nodes.findEdge
+    title: findEdge
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.WriteHeader
+    title: WriteHeader
+    entity: method
+  - id: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    title: NewLogEntry
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.isCompressible
+    title: isCompressible
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.WriteHeader
+    title: WriteHeader
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.Routes
+    title: Routes
+    entity: method
+  - id: /tmp/test-chi.Mux.NotFoundHandler
+    title: NotFoundHandler
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.Unwrap
+    title: Unwrap
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.Unwrap
+    title: Unwrap
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.Discard
+    title: Discard
+    entity: method
+  - id: /tmp/test-chi.Mux.Use
+    title: Use
+    entity: method
+  - id: /tmp/test-chi.Mux.With
+    title: With
+    entity: method
+  - id: /tmp/test-chi.node.FindRoute
+    title: FindRoute
+    entity: method
+  - id: /tmp/test-chi.contextKey.String
+    title: String
+    entity: method
+  - id: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    title: decorateSourceLine
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.Status
+    title: Status
+    entity: method
+  - id: tmp/test-chi/middleware.flushWriter.Flush
+    title: Flush
+    entity: method
+  - id: /tmp/test-chi.Mux.MethodFunc
+    title: MethodFunc
+    entity: method
+  - id: /tmp/test-chi.Mux.Put
+    title: Put
+    entity: method
+  - id: /tmp/test-chi.Mux.Group
+    title: Group
+    entity: method
+  - id: /tmp/test-chi.nodes.Less
+    title: Less
+    entity: method
+  - id: test-chi/_examples/todos-resource.usersResource.List
+    title: List
+    entity: method
+  - id: tmp/test-chi/middleware.HeaderRoute.IsMatch
+    title: IsMatch
+    entity: method
+  - id: tmp/test-chi/middleware.http2FancyWriter.Flush
+    title: Flush
+    entity: method
+  - id: /tmp/test-chi.Mux.Route
+    title: Route
+    entity: method
+  - id: test-chi/_examples/rest.ArticleResponse.Render
+    title: Render
+    entity: method
+  - id: test-chi/_examples/todos-resource.usersResource.Create
+    title: Create
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.Push
+    title: Push
+    entity: method
+  - id: tmp/test-chi/middleware.prettyStack.parse
+    title: parse
+    entity: method
+  - id: tmp/test-chi/middleware.HeaderRouter.RouteDefault
+    title: RouteDefault
+    entity: method
+  - id: /tmp/test-chi.Mux.updateRouteHandler
+    title: updateRouteHandler
+    entity: method
+  - id: /tmp/test-chi.node.findEdge
+    title: findEdge
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.Get
+    title: Get
+    entity: method
+  - id: tmp/test-chi/middleware.Pattern.Match
+    title: Match
+    entity: method
+  - id: /tmp/test-chi.nodes.Swap
+    title: Swap
+    entity: method
+  - id: test-chi/_examples/todos-resource.usersResource.Update
+    title: Update
+    entity: method
+  - id: tmp/test-chi/middleware.defaultLogEntry.Write
+    title: Write
+    entity: method
+  - id: /tmp/test-chi.Mux.Patch
+    title: Patch
+    entity: method
+  - id: /tmp/test-chi.Mux.Middlewares
+    title: Middlewares
+    entity: method
+  - id: versions/presenter/v3.Article.Render
+    title: Render
+    entity: method
+  - id: test-chi/_examples/rest.UserPayload.Bind
+    title: Bind
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.List
+    title: List
+    entity: method
+  - id: versions/presenter/v2.Article.Render
+    title: Render
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.Write
+    title: Write
+    entity: method
+  - id: /tmp/test-chi.node.isLeaf
+    title: isLeaf
+    entity: method
+  - id: /tmp/test-chi.Context.RoutePattern
+    title: RoutePattern
+    entity: method
+  - id: tmp/test-chi/middleware.prettyStack.decorateLine
+    title: decorateLine
+    entity: method
+  - id: /tmp/test-chi.Mux.MethodNotAllowed
+    title: MethodNotAllowed
+    entity: method
+  - id: test-chi/_examples/rest.ErrResponse.Render
+    title: Render
+    entity: method
+  - id: /tmp/test-chi.ChainHandler.ServeHTTP
+    title: ServeHTTP
+    entity: method
+  - id: tmp/test-chi/middleware.flushHijackWriter.Hijack
+    title: Hijack
+    entity: method
+  - id: /tmp/test-chi.Mux.Get
+    title: Get
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.Delete
+    title: Delete
+    entity: method
+  - id: tmp/test-chi/middleware.defaultLogEntry.Panic
+    title: Panic
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.BytesWritten
+    title: BytesWritten
+    entity: method
+  - id: /tmp/test-chi.Mux.Connect
+    title: Connect
+    entity: method
+  - id: /tmp/test-chi.Mux.Post
+    title: Post
+    entity: method
+  - id: /tmp/test-chi.Mux.Match
+    title: Match
+    entity: method
+  - id: /tmp/test-chi.node.setEndpoint
+    title: setEndpoint
+    entity: method
+  - id: /tmp/test-chi.Middlewares.Handler
+    title: Handler
+    entity: method
+  - id: tmp/test-chi/middleware.httpFancyWriter.Flush
+    title: Flush
+    entity: method
+  - id: /tmp/test-chi.Mux.Find
+    title: Find
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.Flush
+    title: Flush
+    entity: method
+  - id: tmp/test-chi/middleware.contextKey.String
+    title: String
+    entity: method
+  - id: tmp/test-chi/middleware.basicWriter.maybeWriteHeader
+    title: maybeWriteHeader
+    entity: method
+  - id: test-chi/_examples/rest.ArticleRequest.Bind
+    title: Bind
+    entity: method
+  - id: test-chi/_examples/todos-resource.todosResource.Sync
+    title: Sync
+    entity: method
+  - id: versions/presenter/v1.Article.Render
+    title: Render
+    entity: method
+  - id: /tmp/test-chi.RouteParams.Add
+    title: Add
+    entity: method
+  - id: /tmp/test-chi.node.replaceChild
+    title: replaceChild
+    entity: method
+  - id: /tmp/test-chi.node.walk
+    title: walk
+    entity: method
+  - id: tmp/test-chi/middleware.compressResponseWriter.writer
+    title: writer
+    entity: method
+  - id: /tmp/test-chi.Context.Reset
+    title: Reset
+    entity: method
+  - id: /tmp/test-chi.Mux.Head
+    title: Head
+    entity: method
+  - id: /tmp/test-chi.nodes.tailSort
+    title: tailSort
+    entity: method
+  - id: tmp/test-chi/middleware.hijackWriter.Hijack
+    title: Hijack
+    entity: method
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/data
+    title: data
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/presenter/v1
+    title: v1
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/presenter/v2
+    title: v2
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/presenter/v3
+    title: v3
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/render
+    title: render
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/docgen
+    title: docgen
+    entity: external
+  - id: github.com/go-chi/render
+    title: render
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/render
+    title: render
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/data
+    title: data
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: compress/flate
+    title: flate
+    entity: external
+  - id: compress/gzip
+    title: gzip
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/middleware
+    title: middleware
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5
+    title: v5
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/data
+    title: data
+    entity: external
+  - id: github.com/go-chi/chi/v5/_examples/versions/data
+    title: data
+    entity: external
+links:
+  - from: test-chi/_examples/custom-handler
+    to: test-chi/_examples/custom-handler.Handler
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.UserPayload
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.Article
+    type: contains
+  - from: versions/presenter/v2
+    to: versions/presenter/v2.Article
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.EncoderFunc
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.LogFormatter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.token
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ArticleRequest
+    type: contains
+  - from: versions/presenter/v1
+    to: versions/presenter/v1.Article
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.HeaderRouter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.throttler
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.httpFancyWriter
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.nodeTyp
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Route
+    type: contains
+  - from: versions/presenter/v3
+    to: versions/presenter/v3.Article
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Router
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Context
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.defaultLogEntry
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.ctxKeyRequestID
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Pattern
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.ThrottleOpts
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.hijackWriter
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ErrResponse
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Middlewares
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.contextKey
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Compressor
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.ioResetterWriter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.HeaderRoute
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.flushWriter
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Mux
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ArticleResponse
+    type: contains
+  - from: test-chi/_examples/todos-resource
+    to: test-chi/_examples/todos-resource.todosResource
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Routes
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.WrapResponseWriter
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.methodTyp
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.User
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.LogEntry
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.LoggerInterface
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.DefaultLogFormatter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.prettyStack
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.basicWriter
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.endpoints
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.nodes
+    type: contains
+  - from: test-chi/_examples/todos-resource
+    to: test-chi/_examples/todos-resource.usersResource
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.compressResponseWriter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.flushHijackWriter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.http2FancyWriter
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.WalkFunc
+    type: contains
+  - from: _examples/versions/data
+    to: _examples/versions/data.Article
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.RouteParams
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.compressFlusher
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.contextKey
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.node
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.endpoint
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.ChainHandler
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ArticleCtx
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Maybe
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Profiler
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.WithValue
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.methodNotAllowedHandler
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.dbGetUser
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.NewRouteContext
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.ContentCharset
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.SetHeader
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.realIP
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.StripSlashes
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.NewWrapResponseWriter
+    type: contains
+  - from: test-chi/_examples/pathvalue
+    to: test-chi/_examples/pathvalue.pathValueHandler
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.dbRemoveArticle
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.matchAcceptEncoding
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.walk
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.ThrottleWithOpts
+    type: contains
+  - from: test-chi/_examples/versions
+    to: test-chi/_examples/versions.randomErrorMiddleware
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.URLParamFromCtx
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.GetHead
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.SupressNotFound
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.main
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.AdminOnly
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ErrRender
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Sunset
+    type: contains
+  - from: test-chi/_examples/fileserver
+    to: test-chi/_examples/fileserver.FileServer
+    type: contains
+  - from: test-chi/_examples/router-walk
+    to: test-chi/_examples/router-walk.Ping
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Logger
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.RegisterMethod
+    type: contains
+  - from: test-chi/_examples/hello-world
+    to: test-chi/_examples/hello-world.main
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.URLParam
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.basicAuthFailed
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.AllowContentType
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Heartbeat
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.GetLogEntry
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.init
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.patParamKeys
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.DeleteArticle
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.PageRoute
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.RedirectSlashes
+    type: contains
+  - from: test-chi/_examples/versions
+    to: test-chi/_examples/versions.apiVersionCtx
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.NewRouter
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.replaceWildcards
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.NoCache
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.RouteHeaders
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.ThrottleBacklog
+    type: contains
+  - from: test-chi/_examples/versions
+    to: test-chi/_examples/versions.getArticle
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.NewArticleResponse
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.SearchArticles
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.split
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.PrintPrettyStack
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.dbGetArticleBySlug
+    type: contains
+  - from: test-chi/_examples/todos-resource
+    to: test-chi/_examples/todos-resource.main
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.AllowContentEncoding
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Recoverer
+    type: contains
+  - from: test-chi/_examples/custom-handler
+    to: test-chi/_examples/custom-handler.main
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.paginate
+    type: contains
+  - from: test-chi/_examples/router-walk
+    to: test-chi/_examples/router-walk.main
+    type: contains
+  - from: test-chi/_examples/versions
+    to: test-chi/_examples/versions.articleRouter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.WithLogEntry
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.init
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.encoderDeflate
+    type: contains
+  - from: test-chi/_examples/graceful
+    to: test-chi/_examples/graceful.service
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.CreateArticle
+    type: contains
+  - from: test-chi/_examples/logging
+    to: test-chi/_examples/logging.main
+    type: contains
+  - from: test-chi/_examples/versions
+    to: test-chi/_examples/versions.main
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.NextRequestID
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.patNextSegment
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Walk
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.dbNewArticle
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ErrInvalidRequest
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.encoderGzip
+    type: contains
+  - from: test-chi/_examples/custom-handler
+    to: test-chi/_examples/custom-handler.customHandler
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.ListArticles
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.GetArticle
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.contentEncoding
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Timeout
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.dbGetArticle
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.GetReqID
+    type: contains
+  - from: test-chi/_examples/custom-method
+    to: test-chi/_examples/custom-method.init
+    type: contains
+  - from: versions/presenter/v2
+    to: versions/presenter/v2.NewArticleResponse
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.NewCompressor
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.RealIP
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.NewMux
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.Chain
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.BasicAuth
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.RequestLogger
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.New
+    type: contains
+  - from: test-chi/_examples/fileserver
+    to: test-chi/_examples/fileserver.main
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.NewUserPayloadResponse
+    type: contains
+  - from: _examples/versions/data
+    to: _examples/versions/data.PresentError
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.RequestSize
+    type: contains
+  - from: test-chi/_examples/versions
+    to: test-chi/_examples/versions.listArticles
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.RouteContext
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Compress
+    type: contains
+  - from: test-chi/_examples/limits
+    to: test-chi/_examples/limits.main
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.CleanPath
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.RequestID
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.longestPrefix
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.UpdateArticle
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.NewPattern
+    type: contains
+  - from: test-chi/_examples/graceful
+    to: test-chi/_examples/graceful.main
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.dbUpdateArticle
+    type: contains
+  - from: versions/presenter/v1
+    to: versions/presenter/v1.NewArticleResponse
+    type: contains
+  - from: /tmp/test-chi
+    to: /tmp/test-chi.chain
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.PathRewrite
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.URLFormat
+    type: contains
+  - from: versions/presenter/v3
+    to: versions/presenter/v3.NewArticleResponse
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.Throttle
+    type: contains
+  - from: test-chi/_examples/custom-method
+    to: test-chi/_examples/custom-method.main
+    type: contains
+  - from: test-chi/_examples/pathvalue
+    to: test-chi/_examples/pathvalue.main
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.adminRouter
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.cW
+    type: contains
+  - from: test-chi/_examples/rest
+    to: test-chi/_examples/rest.NewArticleListResponse
+    type: contains
+  - from: tmp/test-chi/middleware
+    to: tmp/test-chi/middleware.StripPrefix
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.routes
+    type: contains
+  - from: /tmp/test-chi.Middlewares
+    to: /tmp/test-chi.Middlewares.HandlerFunc
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.Close
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.MethodNotAllowedHandler
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.routeHTTP
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Routes
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Delete
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Mount
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.ServeHTTP
+    type: contains
+  - from: tmp/test-chi/middleware.HeaderRouter
+    to: tmp/test-chi/middleware.HeaderRouter.Route
+    type: contains
+  - from: tmp/test-chi/middleware.httpFancyWriter
+    to: tmp/test-chi/middleware.httpFancyWriter.Hijack
+    type: contains
+  - from: tmp/test-chi/middleware.http2FancyWriter
+    to: tmp/test-chi/middleware.http2FancyWriter.Push
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.HandleFunc
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Trace
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.NotFound
+    type: contains
+  - from: test-chi/_examples/todos-resource.usersResource
+    to: test-chi/_examples/todos-resource.usersResource.Get
+    type: contains
+  - from: test-chi/_examples/todos-resource.usersResource
+    to: test-chi/_examples/todos-resource.usersResource.Delete
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Handle
+    type: contains
+  - from: test-chi/_examples/custom-handler.Handler
+    to: test-chi/_examples/custom-handler.Handler.ServeHTTP
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.Tee
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.handle
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.Create
+    type: contains
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.Context.URLParam
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.Hijack
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.nextRoutePath
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.getEdge
+    type: contains
+  - from: /tmp/test-chi.nodes
+    to: /tmp/test-chi.nodes.Sort
+    type: contains
+  - from: tmp/test-chi/middleware.Compressor
+    to: tmp/test-chi/middleware.Compressor.selectEncoder
+    type: contains
+  - from: tmp/test-chi/middleware.throttler
+    to: tmp/test-chi/middleware.throttler.setRetryAfterHeaderIfNeeded
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Method
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.updateSubRoutes
+    type: contains
+  - from: /tmp/test-chi.endpoints
+    to: /tmp/test-chi.endpoints.Value
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.InsertRoute
+    type: contains
+  - from: /tmp/test-chi.nodes
+    to: /tmp/test-chi.nodes.Len
+    type: contains
+  - from: test-chi/_examples/rest.UserPayload
+    to: test-chi/_examples/rest.UserPayload.Render
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.Update
+    type: contains
+  - from: tmp/test-chi/middleware.flushHijackWriter
+    to: tmp/test-chi/middleware.flushHijackWriter.Flush
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Options
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.findRoute
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.findPattern
+    type: contains
+  - from: tmp/test-chi/middleware.Compressor
+    to: tmp/test-chi/middleware.Compressor.Handler
+    type: contains
+  - from: tmp/test-chi/middleware.prettyStack
+    to: tmp/test-chi/middleware.prettyStack.decorateFuncCallLine
+    type: contains
+  - from: tmp/test-chi/middleware.HeaderRouter
+    to: tmp/test-chi/middleware.HeaderRouter.RouteAny
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.addChild
+    type: contains
+  - from: test-chi/_examples/todos-resource.usersResource
+    to: test-chi/_examples/todos-resource.usersResource.Routes
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.Write
+    type: contains
+  - from: tmp/test-chi/middleware.HeaderRouter
+    to: tmp/test-chi/middleware.HeaderRouter.Handler
+    type: contains
+  - from: tmp/test-chi/middleware.httpFancyWriter
+    to: tmp/test-chi/middleware.httpFancyWriter.ReadFrom
+    type: contains
+  - from: tmp/test-chi/middleware.Compressor
+    to: tmp/test-chi/middleware.Compressor.SetEncoder
+    type: contains
+  - from: /tmp/test-chi.nodes
+    to: /tmp/test-chi.nodes.findEdge
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.WriteHeader
+    type: contains
+  - from: tmp/test-chi/middleware.DefaultLogFormatter
+    to: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.isCompressible
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.WriteHeader
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.Routes
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.NotFoundHandler
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.Unwrap
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.Unwrap
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.Discard
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Use
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.With
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.FindRoute
+    type: contains
+  - from: /tmp/test-chi.contextKey
+    to: /tmp/test-chi.contextKey.String
+    type: contains
+  - from: tmp/test-chi/middleware.prettyStack
+    to: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.Status
+    type: contains
+  - from: tmp/test-chi/middleware.flushWriter
+    to: tmp/test-chi/middleware.flushWriter.Flush
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.MethodFunc
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Put
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Group
+    type: contains
+  - from: /tmp/test-chi.nodes
+    to: /tmp/test-chi.nodes.Less
+    type: contains
+  - from: test-chi/_examples/todos-resource.usersResource
+    to: test-chi/_examples/todos-resource.usersResource.List
+    type: contains
+  - from: tmp/test-chi/middleware.HeaderRoute
+    to: tmp/test-chi/middleware.HeaderRoute.IsMatch
+    type: contains
+  - from: tmp/test-chi/middleware.http2FancyWriter
+    to: tmp/test-chi/middleware.http2FancyWriter.Flush
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Route
+    type: contains
+  - from: test-chi/_examples/rest.ArticleResponse
+    to: test-chi/_examples/rest.ArticleResponse.Render
+    type: contains
+  - from: test-chi/_examples/todos-resource.usersResource
+    to: test-chi/_examples/todos-resource.usersResource.Create
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.Push
+    type: contains
+  - from: tmp/test-chi/middleware.prettyStack
+    to: tmp/test-chi/middleware.prettyStack.parse
+    type: contains
+  - from: tmp/test-chi/middleware.HeaderRouter
+    to: tmp/test-chi/middleware.HeaderRouter.RouteDefault
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.updateRouteHandler
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.findEdge
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.Get
+    type: contains
+  - from: tmp/test-chi/middleware.Pattern
+    to: tmp/test-chi/middleware.Pattern.Match
+    type: contains
+  - from: /tmp/test-chi.nodes
+    to: /tmp/test-chi.nodes.Swap
+    type: contains
+  - from: test-chi/_examples/todos-resource.usersResource
+    to: test-chi/_examples/todos-resource.usersResource.Update
+    type: contains
+  - from: tmp/test-chi/middleware.defaultLogEntry
+    to: tmp/test-chi/middleware.defaultLogEntry.Write
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Patch
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Middlewares
+    type: contains
+  - from: versions/presenter/v3.Article
+    to: versions/presenter/v3.Article.Render
+    type: contains
+  - from: test-chi/_examples/rest.UserPayload
+    to: test-chi/_examples/rest.UserPayload.Bind
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.List
+    type: contains
+  - from: versions/presenter/v2.Article
+    to: versions/presenter/v2.Article.Render
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.Write
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.isLeaf
+    type: contains
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.Context.RoutePattern
+    type: contains
+  - from: tmp/test-chi/middleware.prettyStack
+    to: tmp/test-chi/middleware.prettyStack.decorateLine
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.MethodNotAllowed
+    type: contains
+  - from: test-chi/_examples/rest.ErrResponse
+    to: test-chi/_examples/rest.ErrResponse.Render
+    type: contains
+  - from: /tmp/test-chi.ChainHandler
+    to: /tmp/test-chi.ChainHandler.ServeHTTP
+    type: contains
+  - from: tmp/test-chi/middleware.flushHijackWriter
+    to: tmp/test-chi/middleware.flushHijackWriter.Hijack
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Get
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.Delete
+    type: contains
+  - from: tmp/test-chi/middleware.defaultLogEntry
+    to: tmp/test-chi/middleware.defaultLogEntry.Panic
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.BytesWritten
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Connect
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Post
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Match
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.setEndpoint
+    type: contains
+  - from: /tmp/test-chi.Middlewares
+    to: /tmp/test-chi.Middlewares.Handler
+    type: contains
+  - from: tmp/test-chi/middleware.httpFancyWriter
+    to: tmp/test-chi/middleware.httpFancyWriter.Flush
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Find
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.Flush
+    type: contains
+  - from: tmp/test-chi/middleware.contextKey
+    to: tmp/test-chi/middleware.contextKey.String
+    type: contains
+  - from: tmp/test-chi/middleware.basicWriter
+    to: tmp/test-chi/middleware.basicWriter.maybeWriteHeader
+    type: contains
+  - from: test-chi/_examples/rest.ArticleRequest
+    to: test-chi/_examples/rest.ArticleRequest.Bind
+    type: contains
+  - from: test-chi/_examples/todos-resource.todosResource
+    to: test-chi/_examples/todos-resource.todosResource.Sync
+    type: contains
+  - from: versions/presenter/v1.Article
+    to: versions/presenter/v1.Article.Render
+    type: contains
+  - from: /tmp/test-chi.RouteParams
+    to: /tmp/test-chi.RouteParams.Add
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.replaceChild
+    type: contains
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.node.walk
+    type: contains
+  - from: tmp/test-chi/middleware.compressResponseWriter
+    to: tmp/test-chi/middleware.compressResponseWriter.writer
+    type: contains
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.Context.Reset
+    type: contains
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.Mux.Head
+    type: contains
+  - from: /tmp/test-chi.nodes
+    to: /tmp/test-chi.nodes.tailSort
+    type: contains
+  - from: tmp/test-chi/middleware.hijackWriter
+    to: tmp/test-chi/middleware.hijackWriter.Hijack
+    type: contains
+  - from: test-chi/_examples/todos-resource
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/todos-resource
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/todos-resource
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/todos-resource
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/chi/v5/_examples/versions/data
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/chi/v5/_examples/versions/presenter/v1
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/chi/v5/_examples/versions/presenter/v2
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/chi/v5/_examples/versions/presenter/v3
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/versions
+    to: github.com/go-chi/render
+    type: import
+  - from: test-chi/_examples/limits
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/limits
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/rest
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/rest
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/rest
+    to: github.com/go-chi/docgen
+    type: import
+  - from: test-chi/_examples/rest
+    to: github.com/go-chi/render
+    type: import
+  - from: test-chi/_examples/custom-method
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/custom-method
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/graceful
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/graceful
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: _examples/versions/data
+    to: github.com/go-chi/render
+    type: import
+  - from: versions/presenter/v1
+    to: github.com/go-chi/chi/v5/_examples/versions/data
+    type: import
+  - from: tmp/test-chi/middleware
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: tmp/test-chi/middleware
+    to: compress/flate
+    type: import
+  - from: tmp/test-chi/middleware
+    to: compress/gzip
+    type: import
+  - from: tmp/test-chi/middleware
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: tmp/test-chi/middleware
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: tmp/test-chi/middleware
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: tmp/test-chi/middleware
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: tmp/test-chi/middleware
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/custom-handler
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/fileserver
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/fileserver
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/hello-world
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/hello-world
+    to: github.com/go-chi/chi/v5/middleware
+    type: import
+  - from: test-chi/_examples/pathvalue
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: test-chi/_examples/router-walk
+    to: github.com/go-chi/chi/v5
+    type: import
+  - from: versions/presenter/v2
+    to: github.com/go-chi/chi/v5/_examples/versions/data
+    type: import
+  - from: versions/presenter/v3
+    to: github.com/go-chi/chi/v5/_examples/versions/data
+    type: import
+  - from: test-chi/_examples/rest.UpdateArticle
+    to: test-chi/_examples/rest.ErrInvalidRequest
+    type: calls
+  - from: test-chi/_examples/rest.UpdateArticle
+    to: test-chi/_examples/rest.dbUpdateArticle
+    type: calls
+  - from: test-chi/_examples/rest.UpdateArticle
+    to: test-chi/_examples/rest.NewArticleResponse
+    type: calls
+  - from: test-chi/_examples/graceful.main
+    to: test-chi/_examples/graceful.service
+    type: calls
+  - from: tmp/test-chi/middleware.Throttle
+    to: tmp/test-chi/middleware.ThrottleWithOpts
+    type: calls
+  - from: test-chi/_examples/rest.NewArticleListResponse
+    to: test-chi/_examples/rest.NewArticleResponse
+    type: calls
+  - from: test-chi/_examples/rest.ArticleCtx
+    to: test-chi/_examples/rest.dbGetArticle
+    type: calls
+  - from: test-chi/_examples/rest.ArticleCtx
+    to: test-chi/_examples/rest.dbGetArticleBySlug
+    type: calls
+  - from: tmp/test-chi/middleware.ContentCharset
+    to: tmp/test-chi/middleware.contentEncoding
+    type: calls
+  - from: /tmp/test-chi.URLParamFromCtx
+    to: /tmp/test-chi.RouteContext
+    type: calls
+  - from: test-chi/_examples/rest.main
+    to: test-chi/_examples/rest.adminRouter
+    type: calls
+  - from: /tmp/test-chi.URLParam
+    to: /tmp/test-chi.RouteContext
+    type: calls
+  - from: /tmp/test-chi.patParamKeys
+    to: /tmp/test-chi.patNextSegment
+    type: calls
+  - from: test-chi/_examples/rest.DeleteArticle
+    to: test-chi/_examples/rest.dbRemoveArticle
+    type: calls
+  - from: test-chi/_examples/rest.DeleteArticle
+    to: test-chi/_examples/rest.ErrInvalidRequest
+    type: calls
+  - from: test-chi/_examples/rest.DeleteArticle
+    to: test-chi/_examples/rest.NewArticleResponse
+    type: calls
+  - from: /tmp/test-chi.NewRouter
+    to: /tmp/test-chi.NewMux
+    type: calls
+  - from: tmp/test-chi/middleware.ThrottleBacklog
+    to: tmp/test-chi/middleware.ThrottleWithOpts
+    type: calls
+  - from: test-chi/_examples/rest.NewArticleResponse
+    to: test-chi/_examples/rest.dbGetUser
+    type: calls
+  - from: test-chi/_examples/rest.NewArticleResponse
+    to: test-chi/_examples/rest.NewUserPayloadResponse
+    type: calls
+  - from: test-chi/_examples/rest.SearchArticles
+    to: test-chi/_examples/rest.NewArticleListResponse
+    type: calls
+  - from: test-chi/_examples/rest.CreateArticle
+    to: test-chi/_examples/rest.ErrInvalidRequest
+    type: calls
+  - from: test-chi/_examples/rest.CreateArticle
+    to: test-chi/_examples/rest.dbNewArticle
+    type: calls
+  - from: test-chi/_examples/rest.CreateArticle
+    to: test-chi/_examples/rest.NewArticleResponse
+    type: calls
+  - from: test-chi/_examples/versions.main
+    to: test-chi/_examples/versions.apiVersionCtx
+    type: calls
+  - from: test-chi/_examples/versions.main
+    to: test-chi/_examples/versions.articleRouter
+    type: calls
+  - from: test-chi/_examples/versions.main
+    to: test-chi/_examples/versions.apiVersionCtx
+    type: calls
+  - from: test-chi/_examples/versions.main
+    to: test-chi/_examples/versions.articleRouter
+    type: calls
+  - from: test-chi/_examples/versions.main
+    to: test-chi/_examples/versions.apiVersionCtx
+    type: calls
+  - from: test-chi/_examples/versions.main
+    to: test-chi/_examples/versions.articleRouter
+    type: calls
+  - from: /tmp/test-chi.Walk
+    to: /tmp/test-chi.walk
+    type: calls
+  - from: test-chi/_examples/rest.ListArticles
+    to: test-chi/_examples/rest.NewArticleListResponse
+    type: calls
+  - from: test-chi/_examples/rest.ListArticles
+    to: test-chi/_examples/rest.ErrRender
+    type: calls
+  - from: test-chi/_examples/rest.GetArticle
+    to: test-chi/_examples/rest.NewArticleResponse
+    type: calls
+  - from: test-chi/_examples/rest.GetArticle
+    to: test-chi/_examples/rest.ErrRender
+    type: calls
+  - from: tmp/test-chi/middleware.contentEncoding
+    to: tmp/test-chi/middleware.split
+    type: calls
+  - from: tmp/test-chi/middleware.contentEncoding
+    to: tmp/test-chi/middleware.split
+    type: calls
+  - from: tmp/test-chi/middleware.contentEncoding
+    to: tmp/test-chi/middleware.split
+    type: calls
+  - from: tmp/test-chi/middleware.RealIP
+    to: tmp/test-chi/middleware.realIP
+    type: calls
+  - from: /tmp/test-chi.NewMux
+    to: /tmp/test-chi.NewRouteContext
+    type: calls
+  - from: tmp/test-chi/middleware.BasicAuth
+    to: tmp/test-chi/middleware.basicAuthFailed
+    type: calls
+  - from: tmp/test-chi/middleware.BasicAuth
+    to: tmp/test-chi/middleware.basicAuthFailed
+    type: calls
+  - from: tmp/test-chi/middleware.RequestLogger
+    to: tmp/test-chi/middleware.NewWrapResponseWriter
+    type: calls
+  - from: tmp/test-chi/middleware.RequestLogger
+    to: tmp/test-chi/middleware.WithLogEntry
+    type: calls
+  - from: test-chi/_examples/fileserver.main
+    to: test-chi/_examples/fileserver.FileServer
+    type: calls
+  - from: tmp/test-chi/middleware.Compress
+    to: tmp/test-chi/middleware.NewCompressor
+    type: calls
+  - from: /tmp/test-chi.node.findPattern
+    to: /tmp/test-chi.longestPrefix
+    type: calls
+  - from: /tmp/test-chi.node.findPattern
+    to: /tmp/test-chi.longestPrefix
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateFuncCallLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateFuncCallLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateFuncCallLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateFuncCallLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.HeaderRouter.RouteAny
+    to: tmp/test-chi/middleware.NewPattern
+    type: calls
+  - from: /tmp/test-chi.node.addChild
+    to: /tmp/test-chi.patNextSegment
+    type: calls
+  - from: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    to: tmp/test-chi/middleware.GetReqID
+    type: calls
+  - from: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.DefaultLogFormatter.NewLogEntry
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.decorateSourceLine
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: /tmp/test-chi.Mux.Route
+    to: /tmp/test-chi.NewRouter
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.parse
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.parse
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.parse
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.prettyStack.parse
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: /tmp/test-chi.Mux.updateRouteHandler
+    to: /tmp/test-chi.chain
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Write
+    to: tmp/test-chi/middleware.cW
+    type: calls
+  - from: /tmp/test-chi.Context.RoutePattern
+    to: /tmp/test-chi.replaceWildcards
+    type: calls
+  - from: /tmp/test-chi.Mux.MethodNotAllowed
+    to: /tmp/test-chi.Chain
+    type: calls
+  - from: tmp/test-chi/middleware.defaultLogEntry.Panic
+    to: tmp/test-chi/middleware.PrintPrettyStack
+    type: calls
+  - from: /tmp/test-chi.node.setEndpoint
+    to: /tmp/test-chi.patParamKeys
+    type: calls
+  - from: /tmp/test-chi.Middlewares.Handler
+    to: /tmp/test-chi.chain
+    type: calls
+  - from: /tmp/test-chi.Middlewares.HandlerFunc
+    to: /tmp/test-chi.chain
+    type: calls
+  - from: /tmp/test-chi.Mux.MethodNotAllowedHandler
+    to: /tmp/test-chi.methodNotAllowedHandler
+    type: calls
+  - from: /tmp/test-chi.Mux.Mount
+    to: /tmp/test-chi.RouteContext
+    type: calls
+  - from: tmp/test-chi/middleware.HeaderRouter.Route
+    to: tmp/test-chi/middleware.NewPattern
+    type: calls
+  - from: /tmp/test-chi.Mux.NotFound
+    to: /tmp/test-chi.Chain
+    type: calls
+  - from: /tmp/test-chi.Mux.handle
+    to: /tmp/test-chi.Chain
+    type: calls
+  - from: tmp/test-chi/middleware.Compressor.selectEncoder
+    to: tmp/test-chi/middleware.matchAcceptEncoding
+    type: calls
+  - from: /tmp/test-chi.node.InsertRoute
+    to: /tmp/test-chi.patNextSegment
+    type: calls
+  - from: /tmp/test-chi.node.InsertRoute
+    to: /tmp/test-chi.longestPrefix
+    type: calls
+  - from: tmp/test-chi/middleware.DefaultLogFormatter
+    to: tmp/test-chi/middleware.LoggerInterface
+    type: uses
+  - from: tmp/test-chi/middleware.flushHijackWriter
+    to: tmp/test-chi/middleware.basicWriter
+    type: embeds
+  - from: tmp/test-chi/middleware.http2FancyWriter
+    to: tmp/test-chi/middleware.basicWriter
+    type: embeds
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.Routes
+    type: uses
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.endpoints
+    type: uses
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.nodes
+    type: uses
+  - from: /tmp/test-chi.node
+    to: /tmp/test-chi.nodeTyp
+    type: uses
+  - from: /tmp/test-chi.ChainHandler
+    to: /tmp/test-chi.Middlewares
+    type: uses
+  - from: test-chi/_examples/rest.UserPayload
+    to: test-chi/_examples/rest.User
+    type: embeds
+  - from: test-chi/_examples/rest.ArticleRequest
+    to: test-chi/_examples/rest.UserPayload
+    type: uses
+  - from: test-chi/_examples/rest.ArticleRequest
+    to: test-chi/_examples/rest.Article
+    type: embeds
+  - from: tmp/test-chi/middleware.throttler
+    to: tmp/test-chi/middleware.token
+    type: uses
+  - from: tmp/test-chi/middleware.throttler
+    to: tmp/test-chi/middleware.token
+    type: uses
+  - from: tmp/test-chi/middleware.httpFancyWriter
+    to: tmp/test-chi/middleware.basicWriter
+    type: embeds
+  - from: /tmp/test-chi.Route
+    to: /tmp/test-chi.Routes
+    type: uses
+  - from: /tmp/test-chi.Router
+    to: /tmp/test-chi.Routes
+    type: embeds
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.Routes
+    type: uses
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.RouteParams
+    type: uses
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.RouteParams
+    type: uses
+  - from: /tmp/test-chi.Context
+    to: /tmp/test-chi.methodTyp
+    type: uses
+  - from: tmp/test-chi/middleware.defaultLogEntry
+    to: tmp/test-chi/middleware.DefaultLogFormatter
+    type: embeds
+  - from: tmp/test-chi/middleware.hijackWriter
+    to: tmp/test-chi/middleware.basicWriter
+    type: embeds
+  - from: tmp/test-chi/middleware.Compressor
+    to: tmp/test-chi/middleware.EncoderFunc
+    type: uses
+  - from: tmp/test-chi/middleware.HeaderRoute
+    to: tmp/test-chi/middleware.Pattern
+    type: uses
+  - from: tmp/test-chi/middleware.HeaderRoute
+    to: tmp/test-chi/middleware.Pattern
+    type: uses
+  - from: tmp/test-chi/middleware.flushWriter
+    to: tmp/test-chi/middleware.basicWriter
+    type: embeds
+  - from: /tmp/test-chi.Mux
+    to: /tmp/test-chi.node
+    type: uses
+  - from: test-chi/_examples/rest.ArticleResponse
+    to: test-chi/_examples/rest.UserPayload
+    type: uses
+  - from: test-chi/_examples/rest.ArticleResponse
+    to: test-chi/_examples/rest.Article
+    type: embeds
