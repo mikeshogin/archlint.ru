@@ -32,3 +32,7 @@ title = "archlint - Architecture Quality for AI-Driven Development"
     name = "Blog"
     url = "/blog/"
     weight = 4
+  [[menu.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 5
