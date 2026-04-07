@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="container content">
+    <div class="dashboard-header">
+        <h1>{{ .Title }}</h1>
+        <p class="subtitle-left">{{ .Description }}</p>
+    </div>
+
+    <div class="projects-grid">
+        {{ range .Pages }}
+        {{ $health := .Params.health | default 0 }}
+        {{ $healthClass := "health-low" }}
+        {{ if ge $health 80 }}{{ $healthClass = "health-high" }}{{ else if ge $health 60 }}{{ $healthClass = "health-mid" }}{{ end }}
+        <div class="project-card card">
+            <div class="project-card-top">
+                <div>
+                    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                    <p>{{ .Description }}</p>
+                </div>
+                <div class="health-badge {{ $healthClass }}">{{ $health }}</div>
+            </div>
+            <div class="project-meta">
+                {{ with .Params.language }}<span class="card-tag">{{ . }}</span>{{ end }}
+                {{ with .Params.last_scan }}<span class="scan-date">Last scan: {{ . }}</span>{{ end }}
+            </div>
+            {{ with .Params.repo }}
+            <div class="project-links">
+                <a href="{{ . }}" target="_blank" rel="noopener">View repo</a>
+                <a href="{{ $.Permalink }}{{ $.Title | urlize }}">Full report &rarr;</a>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

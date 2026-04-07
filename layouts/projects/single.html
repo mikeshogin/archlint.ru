@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ $health := .Params.health | default 0 }}
+{{ $healthClass := "health-low" }}
+{{ if ge $health 80 }}{{ $healthClass = "health-high" }}{{ else if ge $health 60 }}{{ $healthClass = "health-mid" }}{{ end }}
+
+<div class="container content">
+    <div class="project-page-header">
+        <div class="project-page-title">
+            <a href="/projects/" class="back-link">&larr; Dashboard</a>
+            <h1>{{ .Title }}</h1>
+            <p class="subtitle-left">{{ .Description }}</p>
+            <div class="project-page-meta">
+                {{ with .Params.language }}<span class="card-tag">{{ . }}</span>{{ end }}
+                {{ with .Params.repo }}
+                <a href="{{ . }}" target="_blank" rel="noopener" class="repo-link">{{ . }}</a>
+                {{ end }}
+            </div>
+        </div>
+        <div class="health-score-block">
+            <div class="health-score {{ $healthClass }}">{{ $health }}</div>
+            <div class="health-label">Health Score</div>
+        </div>
+    </div>
+
+    {{ with .Params.last_scan }}
+    <p class="last-scan-info">Last scan: <strong>{{ . }}</strong></p>
+    {{ end }}
+
+    {{ with .Params.violations }}
+    <section class="violations-section">
+        <h2>Violations Summary</h2>
+        <table class="violations-table">
+            <thead>
+                <tr>
+                    <th>Group</th>
+                    <th>Passed</th>
+                    <th>Failed</th>
+                    <th>Warnings</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range $group, $v := . }}
+                {{ $failed := $v.failed | default 0 }}
+                {{ $rowClass := "row-ok" }}
+                {{ if gt $failed 0 }}{{ $rowClass = "row-fail" }}{{ end }}
+                <tr class="{{ $rowClass }}">
+                    <td class="group-name">{{ $group }}</td>
+                    <td class="count-pass">{{ $v.passed | default 0 }}</td>
+                    <td class="count-fail">{{ $failed }}</td>
+                    <td class="count-warn">{{ $v.warning | default 0 }}</td>
+                    <td>
+                        {{ if gt $failed 0 }}
+                        <span class="status-badge status-fail">FAIL</span>
+                        {{ else }}
+                        <span class="status-badge status-pass">PASS</span>
+                        {{ end }}
+                    </td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </section>
+    {{ end }}
+
+    {{ .Content }}
+</div>
+{{ end }}
