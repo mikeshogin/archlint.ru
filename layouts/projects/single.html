@@ -64,5 +64,376 @@
     {{ end }}
 
     {{ .Content }}
+
+    <!-- Charts Dashboard -->
+    <section class="charts-section">
+        <h2>History &amp; Trends</h2>
+        <p class="charts-note">Sample data — will be replaced by real scan history from <code>history.json</code></p>
+
+        <div class="charts-grid">
+            <!-- Health Score Trend -->
+            <div class="chart-card chart-card--full">
+                <div class="chart-card__header">
+                    <span class="chart-card__title">Health Score Trend</span>
+                    <span class="chart-card__badge chart-badge--green">Live</span>
+                </div>
+                <div id="chart-health" class="chart-area"></div>
+            </div>
+
+            <!-- SOLID Violations -->
+            <div class="chart-card chart-card--full">
+                <div class="chart-card__header">
+                    <span class="chart-card__title">SOLID Violations Over Time</span>
+                    <span class="chart-card__badge chart-badge--blue">Stacked</span>
+                </div>
+                <div id="chart-solid" class="chart-area"></div>
+            </div>
+
+            <!-- Coupling Metrics -->
+            <div class="chart-card">
+                <div class="chart-card__header">
+                    <span class="chart-card__title">Coupling Metrics</span>
+                    <span class="chart-card__badge chart-badge--cyan">Dual axis</span>
+                </div>
+                <div id="chart-coupling" class="chart-area"></div>
+            </div>
+
+            <!-- Violations by Group -->
+            <div class="chart-card">
+                <div class="chart-card__header">
+                    <span class="chart-card__title">Violations by Group</span>
+                    <span class="chart-card__badge chart-badge--orange">Latest scan</span>
+                </div>
+                <div id="chart-groups" class="chart-area"></div>
+            </div>
+
+            <!-- Component Growth -->
+            <div class="chart-card chart-card--full">
+                <div class="chart-card__header">
+                    <span class="chart-card__title">Component Growth</span>
+                    <span class="chart-card__badge chart-badge--purple">Structure</span>
+                </div>
+                <div id="chart-components" class="chart-area"></div>
+            </div>
+        </div>
+    </section>
 </div>
+
+<!-- ApexCharts -->
+<script src="https://cdn.jsdelivr.net/npm/apexcharts@3.49.0/dist/apexcharts.min.js"></script>
+<script>
+(function () {
+    // ---------------------------------------------------------------------------
+    // Sample data — will be loaded from /data/projects/repo-name/history.json
+    // ---------------------------------------------------------------------------
+    const sampleData = {
+        dates: ['2025-01', '2025-02', '2025-03', '2025-04', '2025-05', '2025-06',
+                '2025-07', '2025-08', '2025-09', '2025-10', '2025-11', '2025-12'],
+        commits: ['a1b2c3d', 'e4f5a6b', 'c7d8e9f', 'a0b1c2d', 'e3f4a5b',
+                  'c6d7e8f', 'a9b0c1d', 'e2f3a4b', 'c5d6e7f', 'a8b9c0d', 'e1f2a3b', 'c4d5e6f'],
+        health:      [62, 65, 67, 70, 70, 74, 76, 80, 83, 86, 88, 90],
+        solid: {
+            SRP: [5, 5, 4, 4, 3, 3, 3, 2, 2, 1, 1, 1],
+            OCP: [3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1, 0],
+            LSP: [2, 2, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+            ISP: [4, 3, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1],
+            DIP: [6, 5, 5, 4, 4, 3, 3, 2, 2, 2, 1, 1],
+        },
+        coupling: {
+            fan_out_max: [8, 9, 9, 8, 7, 7, 6, 6, 5, 5, 4, 4],
+            cycles:      [3, 4, 3, 3, 2, 2, 2, 1, 1, 1, 0, 0],
+        },
+        groups: {
+            labels: ['core', 'solid', 'patterns', 'architecture', 'quality', 'advanced'],
+            failed: [2, 1, 0, 1, 0, 0],
+            warning: [1, 0, 2, 0, 1, 1],
+            passed: [8, 4, 6, 7, 9, 5],
+        },
+        components: {
+            nodes: [14, 16, 17, 19, 20, 22, 23, 25, 26, 27, 28, 29],
+            links: [18, 21, 23, 26, 27, 30, 32, 35, 37, 38, 39, 41],
+        },
+    };
+
+    // ---------------------------------------------------------------------------
+    // Shared theme / palette
+    // ---------------------------------------------------------------------------
+    const FONT   = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+    const BG     = '#0f172a';     // slate-900
+    const BG2    = '#1e293b';     // slate-800
+    const GRID   = '#334155';     // slate-700
+    const TEXT   = '#cbd5e1';     // slate-300
+    const TEXT2  = '#94a3b8';     // slate-400
+    const BORDER = '#334155';
+
+    // Brand colours (blues / cyans)
+    const C_BLUE   = '#3b82f6';
+    const C_CYAN   = '#06b6d4';
+    const C_TEAL   = '#14b8a6';
+    const C_INDIGO = '#6366f1';
+    const C_VIOLET = '#8b5cf6';
+    const C_GREEN  = '#22c55e';
+    const C_YELLOW = '#eab308';
+    const C_RED    = '#ef4444';
+    const C_ORANGE = '#f97316';
+
+    function baseOptions(categories) {
+        return {
+            chart: {
+                background: BG,
+                foreColor: TEXT,
+                fontFamily: FONT,
+                toolbar: { show: false },
+                animations: { enabled: true, speed: 600 },
+            },
+            theme: { mode: 'dark' },
+            xaxis: {
+                categories,
+                labels: { style: { colors: TEXT2, fontSize: '11px' } },
+                axisBorder: { color: GRID },
+                axisTicks: { color: GRID },
+            },
+            yaxis: {
+                labels: { style: { colors: TEXT2, fontSize: '11px' } },
+            },
+            grid: {
+                borderColor: GRID,
+                strokeDashArray: 4,
+            },
+            tooltip: {
+                theme: 'dark',
+                style: { fontSize: '12px', fontFamily: FONT },
+            },
+            legend: {
+                labels: { colors: TEXT2 },
+                fontSize: '12px',
+                fontFamily: FONT,
+            },
+        };
+    }
+
+    // ---------------------------------------------------------------------------
+    // 1. Health Score Trend — line with zones
+    // ---------------------------------------------------------------------------
+    (function renderHealth() {
+        const opts = {
+            ...baseOptions(sampleData.dates),
+            series: [{
+                name: 'Health Score',
+                data: sampleData.health,
+            }],
+            chart: {
+                ...baseOptions(sampleData.dates).chart,
+                type: 'line',
+                height: 280,
+            },
+            stroke: { curve: 'smooth', width: 3 },
+            colors: [C_CYAN],
+            markers: { size: 5, colors: [C_CYAN], strokeColors: BG, strokeWidth: 2 },
+            annotations: {
+                yaxis: [
+                    {
+                        y: 80, y2: 100,
+                        fillColor: C_GREEN, opacity: 0.06,
+                        label: { text: 'Healthy', style: { color: C_GREEN, fontSize: '10px', background: 'transparent', border: 'none' } },
+                    },
+                    {
+                        y: 60, y2: 80,
+                        fillColor: C_YELLOW, opacity: 0.06,
+                        label: { text: 'At risk', style: { color: C_YELLOW, fontSize: '10px', background: 'transparent', border: 'none' } },
+                    },
+                    {
+                        y: 0, y2: 60,
+                        fillColor: C_RED, opacity: 0.06,
+                        label: { text: 'Critical', style: { color: C_RED, fontSize: '10px', background: 'transparent', border: 'none' } },
+                    },
+                ],
+            },
+            yaxis: {
+                ...baseOptions(sampleData.dates).yaxis,
+                min: 0, max: 100,
+                tickAmount: 5,
+            },
+            tooltip: {
+                ...baseOptions(sampleData.dates).tooltip,
+                custom: function ({ series, seriesIndex, dataPointIndex }) {
+                    const val = series[seriesIndex][dataPointIndex];
+                    const commit = sampleData.commits[dataPointIndex];
+                    const zone = val >= 80 ? `<span style="color:${C_GREEN}">Healthy</span>`
+                               : val >= 60 ? `<span style="color:${C_YELLOW}">At risk</span>`
+                               :             `<span style="color:${C_RED}">Critical</span>`;
+                    return `<div class="apx-tooltip">
+                        <div class="apx-tooltip__score">${val}</div>
+                        <div class="apx-tooltip__row">${zone}</div>
+                        <div class="apx-tooltip__commit">commit: ${commit}</div>
+                    </div>`;
+                },
+            },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 0.4,
+                    opacityFrom: 0.5,
+                    opacityTo: 0.05,
+                    stops: [0, 100],
+                },
+            },
+        };
+        new ApexCharts(document.querySelector('#chart-health'), opts).render();
+    }());
+
+    // ---------------------------------------------------------------------------
+    // 2. SOLID Violations — stacked area
+    // ---------------------------------------------------------------------------
+    (function renderSolid() {
+        const colors = [C_BLUE, C_CYAN, C_TEAL, C_INDIGO, C_VIOLET];
+        const opts = {
+            ...baseOptions(sampleData.dates),
+            series: Object.entries(sampleData.solid).map(([name, data], i) => ({ name, data })),
+            chart: {
+                ...baseOptions(sampleData.dates).chart,
+                type: 'area',
+                height: 280,
+                stacked: true,
+            },
+            colors,
+            stroke: { curve: 'smooth', width: 2 },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    opacityFrom: 0.65,
+                    opacityTo: 0.15,
+                },
+            },
+            dataLabels: { enabled: false },
+            tooltip: {
+                ...baseOptions(sampleData.dates).tooltip,
+                shared: true,
+                intersect: false,
+            },
+        };
+        new ApexCharts(document.querySelector('#chart-solid'), opts).render();
+    }());
+
+    // ---------------------------------------------------------------------------
+    // 3. Coupling Metrics — dual-axis line
+    // ---------------------------------------------------------------------------
+    (function renderCoupling() {
+        const opts = {
+            ...baseOptions(sampleData.dates),
+            series: [
+                { name: 'Fan-out max', data: sampleData.coupling.fan_out_max },
+                { name: 'Cycles',      data: sampleData.coupling.cycles },
+            ],
+            chart: {
+                ...baseOptions(sampleData.dates).chart,
+                type: 'line',
+                height: 300,
+            },
+            colors: [C_CYAN, C_ORANGE],
+            stroke: { curve: 'smooth', width: [3, 2], dashArray: [0, 5] },
+            markers: { size: [4, 4], strokeColors: BG, strokeWidth: 2 },
+            yaxis: [
+                {
+                    title: { text: 'Fan-out', style: { color: C_CYAN, fontSize: '11px', fontFamily: FONT } },
+                    labels: { style: { colors: TEXT2, fontSize: '11px' } },
+                },
+                {
+                    opposite: true,
+                    title: { text: 'Cycles', style: { color: C_ORANGE, fontSize: '11px', fontFamily: FONT } },
+                    labels: { style: { colors: TEXT2, fontSize: '11px' } },
+                },
+            ],
+            tooltip: {
+                ...baseOptions(sampleData.dates).tooltip,
+                shared: true,
+                intersect: false,
+            },
+        };
+        new ApexCharts(document.querySelector('#chart-coupling'), opts).render();
+    }());
+
+    // ---------------------------------------------------------------------------
+    // 4. Violations by Group — horizontal bar (latest scan)
+    // ---------------------------------------------------------------------------
+    (function renderGroups() {
+        const opts = {
+            ...baseOptions(sampleData.groups.labels),
+            series: [
+                { name: 'Failed',  data: sampleData.groups.failed  },
+                { name: 'Warning', data: sampleData.groups.warning },
+                { name: 'Passed',  data: sampleData.groups.passed  },
+            ],
+            chart: {
+                ...baseOptions(sampleData.groups.labels).chart,
+                type: 'bar',
+                height: 300,
+                stacked: true,
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: true,
+                    barHeight: '55%',
+                    borderRadius: 3,
+                },
+            },
+            colors: [C_RED, C_YELLOW, C_TEAL],
+            dataLabels: { enabled: false },
+            xaxis: {
+                ...baseOptions(sampleData.groups.labels).xaxis,
+                categories: sampleData.groups.labels,
+            },
+            tooltip: {
+                ...baseOptions(sampleData.groups.labels).tooltip,
+                shared: true,
+                intersect: false,
+            },
+        };
+        new ApexCharts(document.querySelector('#chart-groups'), opts).render();
+    }());
+
+    // ---------------------------------------------------------------------------
+    // 5. Component Growth — dual line (nodes + links)
+    // ---------------------------------------------------------------------------
+    (function renderComponents() {
+        const opts = {
+            ...baseOptions(sampleData.dates),
+            series: [
+                { name: 'Components', data: sampleData.components.nodes },
+                { name: 'Links',      data: sampleData.components.links },
+            ],
+            chart: {
+                ...baseOptions(sampleData.dates).chart,
+                type: 'line',
+                height: 260,
+            },
+            colors: [C_BLUE, C_VIOLET],
+            stroke: { curve: 'smooth', width: 3 },
+            markers: { size: 4, strokeColors: BG, strokeWidth: 2 },
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    opacityFrom: 0.3,
+                    opacityTo: 0.03,
+                },
+            },
+            dataLabels: { enabled: false },
+            tooltip: {
+                ...baseOptions(sampleData.dates).tooltip,
+                shared: true,
+                intersect: false,
+                custom: function ({ series, dataPointIndex }) {
+                    const commit = sampleData.commits[dataPointIndex];
+                    return `<div class="apx-tooltip">
+                        <div class="apx-tooltip__row">Components: <b>${series[0][dataPointIndex]}</b></div>
+                        <div class="apx-tooltip__row">Links: <b>${series[1][dataPointIndex]}</b></div>
+                        <div class="apx-tooltip__commit">commit: ${commit}</div>
+                    </div>`;
+                },
+            },
+        };
+        new ApexCharts(document.querySelector('#chart-components'), opts).render();
+    }());
+}());
+</script>
 {{ end }}
