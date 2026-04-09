@@ -1,0 +1,118 @@
+{
+  "repo": "mshogin/archlint-demo",
+  "repo_url": "https://github.com/mshogin/archlint-demo",
+  "language": "Go",
+  "collected_at": "2026-04-09T15:15:05.307204Z",
+  "dates": [
+    "2026-04-09",
+    "2026-04-09",
+    "2026-04-09",
+    "2026-04-09",
+    "2026-03-28",
+    "2026-03-28",
+    "2026-03-28"
+  ],
+  "commits": [
+    "fe2025ef",
+    "a46e26dd",
+    "666431f4",
+    "dcb6f1b0",
+    "78c410e9",
+    "40bfb0e6",
+    "dae96768"
+  ],
+  "messages": [
+    "feat: add behavioral callgraph cycle demo for Stachka 2026",
+    "fix: correct repository layer path from internal/repository to interna",
+    "demo: move api.go with intentional violations to demo-scenario",
+    "demo: add Makefile for live demo (make step0..step4)",
+    "feat: demo project with intentional architecture violations",
+    "feat: realistic live demo scenario for Stachka 2026",
+    "feat: rewrite demo scenario - layer violation focus"
+  ],
+  "health": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+  ],
+  "components": [
+    25,
+    25,
+    25,
+    25,
+    8,
+    16,
+    20
+  ],
+  "links": [
+    38,
+    38,
+    37,
+    37,
+    11,
+    22,
+    31
+  ],
+  "metrics": {
+    "god_classes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "cycles": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fan_out_max": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "groups": {
+    "labels": [
+      "core",
+      "solid",
+      "advanced"
+    ],
+    "failed": [
+      0,
+      0,
+      0
+    ],
+    "warning": [
+      0,
+      0,
+      0
+    ],
+    "passed": [
+      8,
+      3,
+      14
+    ]
+  },
+  "latest": {
+    "health": 100,
+    "components": 20,
+    "links": 31,
+    "god_classes": 0,
+    "cycles": 0
+  }
+}
