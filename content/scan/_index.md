@@ -1,36 +1,35 @@
 ---
 title: "Scan Results"
-description: "Architecture analysis results for open-source projects"
+description: "Nightly architecture analysis of open-source projects"
 ---
 
-## archlint self-scan
+Last scan: 2026-04-12
+Repositories monitored: 15
 
-archlint-rs (Rust version) scanning the archlint Go + Rust codebase:
+## Health Dashboard
 
-| Metric | Value |
-|--------|-------|
-| Components | 55 |
-| Links | 197 |
-| Cycles | 0 |
-| Violations | 13 |
-| Max fan-out | 10 |
+| Repository | Language | Health | Passed | Failed | Warnings |
+|-----------|----------|--------|--------|--------|----------|
+| [joho/godotenv](joho-godotenv/) | Go | 88% (good) | 32 | 2 | 1 |
+| [fatih/color](fatih-color/) | Go | 88% (good) | 32 | 2 | 1 |
+| [caarlos0/env](caarlos0-env/) | Go | 86% (good) | 31 | 2 | 2 |
+| [charmbracelet/log](charmbracelet-log/) | Go | 86% (good) | 33 | 2 | 2 |
+| [mikeshogin/seclint](mikeshogin-seclint/) | Go | 74% (moderate) | 31 | 4 | 3 |
+| [mikeshogin/promptlint](mikeshogin-promptlint/) | Go | 69% (moderate) | 30 | 5 | 3 |
+| [mikeshogin/costlint](mikeshogin-costlint/) | Go | 69% (moderate) | 29 | 5 | 3 |
+| [orhun/git-cliff](orhun-git-cliff/) | Rust | 59% (needs work) | 28 | 7 | 3 |
+| [sharkdp/vivid](sharkdp-vivid/) | Rust | 51% (needs work) | 25 | 9 | 2 |
+| [svenstaro/miniserve](svenstaro-miniserve/) | Rust | 39% (poor) | 22 | 11 | 3 |
+| [mshogin/archlint](mshogin-archlint/) | Go | 34% (poor) | 22 | 12 | 3 |
+| [kgatilin/deskd](kgatilin-deskd/) | Rust | 29% (poor) | 23 | 13 | 3 |
+| [ducaale/xh](ducaale-xh/) | Rust | 26% (poor) | 20 | 14 | 2 |
+| [sharkdp/hyperfine](sharkdp-hyperfine/) | Rust | 24% (poor) | 20 | 14 | 3 |
+| [twitchtv/twirp](twitchtv-twirp/) | Go | 14% (poor) | 17 | 16 | 3 |
 
-### Violations (fan-out > 5)
+## How it works
 
-| Component | Fan-out | Limit |
-|-----------|---------|-------|
-| cli::callgraph | 10 | 5 |
-| mcp::server | 9 | 5 |
-| mcp::server_test | 9 | 5 |
-| analyzer::go | 8 | 5 |
-| archlint-rs::src::analyzer | 8 | 5 |
-| cli::check | 7 | 5 |
-| cli::metrics | 7 | 5 |
-| cli::collect | 7 | 5 |
-| analyzer::rust | 7 | 5 |
-| config::bpmn_contexts | 7 | 5 |
-| mcp::watcher | 7 | 5 |
-| cli::bpmn | 6 | 5 |
-| tests::fullcycle_test | 6 | 5 |
+Every night at 3:00 UTC, archlint clones each monitored repository, builds the architecture dependency graph, and runs 229+ validators across core metrics, SOLID principles, and advanced graph analysis.
 
-Scanned with archlint-rs v0.1.0 (Rust, parallel via rayon).
+Health score: `100 - (failed * 5) - (warnings * 2)`, minimum 0.
+
+Want your repo scanned? [Open an issue](https://github.com/mshogin/archlint/issues/new?title=Add+repo:+owner/name).
